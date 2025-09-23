@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 6637381009674795721}
   - component: {fileID: 731828907448827708}
   - component: {fileID: 2975350679101863679}
-  - component: {fileID: 239659846610767509}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bala
@@ -168,17 +167,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dano: 15
   velocidade: 1.06
---- !u!114 &239659846610767509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849363405978599609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf4e246f50c3fa14ba49a82b1d39eb6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dano: 26
-  velocidade: 2.46

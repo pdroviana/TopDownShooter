@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2275657}
   - component: {fileID: 2275658}
+  - component: {fileID: 2275659}
   m_Layer: 0
   m_Name: Arma
   m_TagString: Untagged
@@ -145,10 +146,11 @@ Transform:
   m_GameObject: {fileID: 2275656}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04947136, y: -0.048415557, z: 0}
+  m_LocalPosition: {x: -0.003, y: -0.044, z: 0}
   m_LocalScale: {x: 0.74232304, y: 0.74232304, z: 0.74232304}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 565630231}
   m_Father: {fileID: 1934063457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2275658
@@ -206,6 +208,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2275659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2275656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa968d6ce860a2e4c968f751a778576c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saidaDoTiro: {fileID: 565630231}
+  bala: {fileID: 849363405978599609, guid: 8d97ae16f7d44df4f9ae0faa5d7a9791, type: 3}
 --- !u!1001 &126090507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -399,6 +415,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &565630230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 565630231}
+  m_Layer: 0
+  m_Name: Saida de tiro
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &565630231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565630230}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.2998326, y: -0.002, z: -0.0032473446}
+  m_LocalScale: {x: 0.33086276, y: 0.33086276, z: 0.33086276}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2275657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619394800
 GameObject:
@@ -814,6 +861,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 731828907448827708, guid: 8d97ae16f7d44df4f9ae0faa5d7a9791, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 849363405978599609, guid: 8d97ae16f7d44df4f9ae0faa5d7a9791, type: 3}
       propertyPath: m_Name
       value: Bullet

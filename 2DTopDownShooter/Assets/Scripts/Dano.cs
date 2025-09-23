@@ -1,3 +1,5 @@
+using System;
+using UnityEditor;
 using UnityEngine;
 
 public class Dano : MonoBehaviour
@@ -46,7 +48,13 @@ public class Dano : MonoBehaviour
         {
             int novaVida = other.gameObject.GetComponent<Personagem>().getVida() - getDano();
             other.gameObject.GetComponent<Personagem>().setVida(novaVida);
+            Destroy(gameObject);
         }
+        
+        
+        
     }
 
+    
+    
 }
