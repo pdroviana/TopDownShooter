@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 539068137592508973}
   - component: {fileID: 3662254338685070986}
   - component: {fileID: 4066040276648896652}
+  - component: {fileID: 7041147531091683021}
   m_Layer: 0
   m_Name: Inimigo
   m_TagString: Inimigo
@@ -152,3 +153,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7041147531091683021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3930605023327573466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4814c78d19d66041922d7f1258a67c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 98
+  energia: 0
+  velocidade: 0
