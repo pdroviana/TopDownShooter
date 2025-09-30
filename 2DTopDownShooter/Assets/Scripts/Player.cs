@@ -2,15 +2,33 @@ using UnityEngine;
 
 public class Player : Personagem
 {
-
+    private SpriteRenderer spriteRenderer;
+    public Transform arma;
     void Start()
     {
-
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 
     void Update()
     {
+        
+        if (arma.rotation.eulerAngles.z > -90 
+            && arma.rotation.eulerAngles.z < 90)
+        {
+            spriteRenderer.flipX = false;
+        }
+        
+        //esquerda
+        if (arma.rotation.eulerAngles.z > 90 
+            && arma.rotation.eulerAngles.z < 270)
+        {
+            spriteRenderer.flipX = true;
+        }
+        
+        
+        
+        
         if (Input.GetKey(KeyCode.A))
         {
             transform.position -= new Vector3(getVelocidade() * Time.deltaTime, 0, 0);
@@ -30,6 +48,9 @@ public class Player : Personagem
         {
             transform.position -= new Vector3(0, getVelocidade() * Time.deltaTime, 0);
         }
+        
+        
+        
     }
 }
 
