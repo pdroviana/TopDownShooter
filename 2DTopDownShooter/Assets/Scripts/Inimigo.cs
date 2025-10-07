@@ -12,7 +12,7 @@ public class Inimigo : Personagem
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
-    private bool andando = false;
+    private bool andaando = false;
     
     public void setDano(int dano)
     {
@@ -41,7 +41,7 @@ public class Inimigo : Personagem
     }
     void Update()
     {
-        andando = false;
+        andaando = false;
         
         if (posicaoDoPlayer.position.x - transform.position.x > 0)
         {
@@ -57,13 +57,13 @@ public class Inimigo : Personagem
         if (posicaoDoPlayer != null && 
             Vector3.Distance(posicaoDoPlayer.position, transform.position) <= raioDeVisao )
         {
-            Debug.Log("Posição do Pluer"+ posicaoDoPlayer.position);
+            Debug.Log("Posição do Player"+ posicaoDoPlayer.position);
             
             transform.position = Vector3.MoveTowards(transform.position, 
                 posicaoDoPlayer.transform.position,
                 getVelocidade() * Time.deltaTime);
             
-            andando = true;
+            andaando = true;
         }
         
         if (getVida() <= 0)
@@ -72,7 +72,7 @@ public class Inimigo : Personagem
             gameObject.SetActive(false);
         }
         
-        //animator.SetBool("Andando",andando);
+        animator.SetBool("andaando",andaando);
 
     }
     
